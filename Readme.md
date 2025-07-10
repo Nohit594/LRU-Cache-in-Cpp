@@ -39,6 +39,9 @@ lru.insertKeyValue("banana", 30);
 
 cout << lru.mostRecentKey() << endl; // Outputs: banana
 
+lru.insertKeyValue("mango", 40);
+cout << lru.mostRecentKey() << endl; // Outputs: banana because it updates the value only but not used it by accessing data
+
 int* val = lru.getValue("mango");    // Access mango (now most recent)
 if(val != NULL) {
     cout << *val << endl;
@@ -73,7 +76,7 @@ g++ LRU.cpp -o lru_cache
 
 ```
 banana
-mango
+banana
 Order of Mango 40
 apple doesn't exist
 ```
