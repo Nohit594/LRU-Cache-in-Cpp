@@ -75,7 +75,7 @@ g++ LRU.cpp -o lru_cache
 banana
 mango
 Order of Mango 40
-apple doesn't existbanana doesn't exist
+apple doesn't exist
 ```
 
 ---
